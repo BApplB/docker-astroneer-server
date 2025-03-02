@@ -115,7 +115,7 @@ function AstroServerConfig() {
     };
 
     setWith(engine, 'URL.Port', values.ASTRO_SERVER_PORT, Object);
-    setWith(engine, 'SystemSettings', { 'net.AllowEncryption': 'False' }, Object);
+    /** setWith(engine, 'SystemSettings', { 'net.AllowEncryption': 'False' }, Object); */
     setWith(engine, '/Script/OnlineSubsystemUtils.IpNetDriver', {
       MaxClientRate: 1048576,
       MaxInternetClientRate: 1048576
