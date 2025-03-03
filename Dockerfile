@@ -1,7 +1,7 @@
 FROM amd64/debian:bookworm
 
 ENV DEBIAN_FRONTEND="noninteractive"
-ENV GE_PROTON_VERSION="9-18"
+ENV GE_PROTON_VERSION="9-25"
 ENV STEAMCMD_PATH="/steamcmd"
 ENV STEAM_COMPAT_CLIENT_INSTALL_PATH="/steamcmd"
 ENV STEAM_COMPAT_DATA_PATH="/steamcmd/steamapps/compatdata/728470"
@@ -84,4 +84,4 @@ USER steam
 
 ENTRYPOINT ["/usr/bin/entrypoint.sh"]
 
-EXPOSE 8777
+EXPOSE 7777
